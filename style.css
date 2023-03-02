@@ -1,0 +1,157 @@
+* {
+  font-family: "Manrope", sans-serif !important;
+  /* font-family: 'Poppins', sans-serif !important; */
+}
+
+:root {
+  --primary: #f1224a;
+}
+
+h1 {
+  font-size: 52px !important;
+  font-weight: 800 !important;
+}
+
+h2 {
+  font-size: 2.5rem !important;
+  font-weight: 800 !important;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+
+button {
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  background-color: var(--primary);
+  border: 0px solid white;
+  width: fit-content;
+  padding: 10px;
+  padding-inline: 30px;
+  border-radius: 50px !important;
+  text-transform: uppercase !important;
+}
+
+.top-section {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    /* bottom, image */ url("/media/steel-slide1.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding-inline: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-section p {
+  max-width: 700px;
+  font-size: 1.6rem !important;
+}
+.top-section h1 {
+  max-width: 700px;
+  font-size: 4rem !important;
+}
+.top-section p {
+  max-width: 700px;
+  font-size: 1.5rem !important;
+}
+
+.about {
+  margin-top: 200px;
+  display: flex;
+  margin-bottom: 200px;
+}
+
+.about h2 {
+  color: var(--primary);
+}
+
+.why-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/media/steel-slide3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.why-us {
+  display: flex;
+  color: white;
+  background-color: var(--primary);
+  height: 50vh;
+}
+
+.why-us h2 {
+  color: white;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.why-card {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  z-index: 999999;
+  text-align: center;
+}
+
+.facilities {
+  margin-top: 100px;
+}
+
+.facilities h2 {
+    color: var(--primary);
+}
+
+.fac-card {
+  display: flex;
+  width: 30%;
+  /* background-color: #f1224a; */
+  border-radius: 20px;
+  min-height: 120px;
+  cursor: pointer;
+}
+
+.fac-card:hover {
+    color: var(--primary);
+    scale: 1.05;
+    animation-duration: 1s;
+}
+
+.fac-card h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.fac-img {
+    width: 100%; height: 100%;
+    object-fit: cover; 
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.range h2 {
+    color: var(--primary);
+}
+
+@media screen and (max-width: 760px) {
+}
