@@ -44,8 +44,6 @@ button {
   position: relative;
 }
 
-
-
 .top-section {
   /* position: absolute; */
   width: 100vw;
@@ -89,6 +87,10 @@ button {
     url("/media/img4.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.why-us div {
+  width: 50%;
 }
 
 .why-us {
@@ -206,6 +208,10 @@ button {
     height: auto;
   }
 
+  .why-us div {
+    width: 100%;
+  }
+  
   .why-img {
     min-height: 250px;
   }
