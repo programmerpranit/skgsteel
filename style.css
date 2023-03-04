@@ -1,10 +1,12 @@
 * {
-  font-family: "Manrope", sans-serif !important;
-  /* font-family: 'Poppins', sans-serif !important; */
+  /* font-family: "Manrope", sans-serif !important; */
+  font-family: 'Poppins', sans-serif !important;
 }
 
 :root {
-  --primary: #f1224a;
+  --primary: #0b61a6;
+  /* --primary: #4b9edd; */
+  /* --secondary: ; */
 }
 
 h1 {
@@ -37,11 +39,19 @@ button {
   text-transform: uppercase !important;
 }
 
+.wrapper {
+  overflow-x: hidden !important;
+  position: relative;
+}
+
+
+
 .top-section {
+  /* position: absolute; */
   width: 100vw;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    /* bottom, image */ url("/media/steel-slide1.jpg");
+    /* bottom, image */ url("/media/img1.jpg");
   background-position: center;
   background-size: cover;
   color: white;
@@ -76,7 +86,7 @@ button {
 
 .why-img {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/media/steel-slide3.jpg");
+    url("/media/img4.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -148,10 +158,87 @@ button {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
+ 
 .range h2 {
     color: var(--primary);
 }
 
 @media screen and (max-width: 760px) {
+
+  .top-section {
+    padding-inline: 20px;
+  }
+
+  h1 {
+    font-size: 20px !important;
+    font-weight: 800 !important;
+  }
+  
+  h2 {
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    color: var(--primary);
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+
+  .top-section p {
+    max-width: 700px;
+    font-size: 1.2rem !important;
+  }
+  .top-section h1 {
+    max-width: 700px;
+    font-size: 3rem !important;
+  }
+
+  .about {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .why-us {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .why-img {
+    min-height: 250px;
+  }
+
+  .cards {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .why-card {
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .facilities {
+    margin-top: 50px;
+  }
+ 
+  .card-list {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .fac-card {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .application-container {
+    flex-direction: column;
+  }
+
 }
+
