@@ -1,6 +1,6 @@
 * {
   /* font-family: "Manrope", sans-serif !important; */
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 :root {
@@ -125,7 +125,7 @@ button {
 }
 
 .facilities h2 {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .fac-card {
@@ -138,35 +138,36 @@ button {
 }
 
 .fac-card:hover {
-    color: var(--primary);
-    scale: 1.05;
-    animation-duration: 1s;
+  color: var(--primary);
+  scale: 1.05;
+  animation-duration: 1s;
 }
 
 .fac-card h4 {
-    font-size: 1.5rem;
-    font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .card-list {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .fac-img {
-    width: 100%; height: 100%;
-    object-fit: cover; 
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
- 
+
 .range h2 {
-    color: var(--primary);
+  color: var(--primary);
 }
- 
+
 .team h2 {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .copyright {
@@ -179,14 +180,12 @@ button {
   margin: auto;
 }
 
-
 .team-img {
   border: var(--primary) solid 2px;
   border-radius: 20px;
 }
 
 @media screen and (max-width: 760px) {
-
   .top-section {
     padding-inline: 20px;
   }
@@ -195,14 +194,14 @@ button {
     font-size: 20px !important;
     font-weight: 800 !important;
   }
-  
+
   h2 {
     font-size: 2rem !important;
     font-weight: 800 !important;
     color: var(--primary);
     text-transform: uppercase;
   }
-  
+
   p {
     font-size: 16px !important;
     font-weight: 400 !important;
@@ -231,7 +230,7 @@ button {
   .why-us div {
     width: 100%;
   }
-  
+
   .why-img {
     min-height: 250px;
   }
@@ -250,7 +249,7 @@ button {
   .facilities {
     margin-top: 50px;
   }
- 
+
   .card-list {
     flex-direction: column;
     margin: auto;
@@ -265,6 +264,4 @@ button {
   .application-container {
     flex-direction: column;
   }
-
 }
-
