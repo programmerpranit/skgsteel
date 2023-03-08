@@ -6,6 +6,7 @@
     <title>Skg Steel</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,43 +27,55 @@
   </head>
   <body>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script>
       AOS.init({ duration: 600 });
     </script>
 
-    <div class="wrapper">
-      <nav class="navbar navbar-expand-md px-md-5 navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">SKG</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
-            </div>
+    <div class="wrapper"> 
+      <header>
+        <div class="header">
+          <div class="header-logo">
+            <!-- <img src="content/logo/logo_text.png" alt="Skg Steeltech logo" /> -->
+            <p style="margin: 0px; font-size: larger !important; font-weight: 600 !important;">SKG STEELTECH</p>
+          </div>
+          <div id="mobile-side-nav" class="header-navigation-bar">
+            <ul>
+              <li>
+                <a class="hamubuger" href="#home">Home</a>
+              </li>
+              <li>
+                <a class="hamubuger" href="#about">About</a>
+              </li>
+              <li>
+                <a class="hamubuger" href="#why-us">Why Us</a>
+              </li>
+              <li>
+                <a class="hamubuger" href="#facilities">Facilities</a>
+              </li>
+              <li>
+                <a class="hamubuger" href="#range">Range</a>
+              </li>
+              <li>
+                <a class="hamubuger" href="#team">Team</a>
+              </li>
+              <li>
+                <a class="hamubuger" href="#app">Applications</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-hamburger">
+            <ul id="hamburger-ul">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
         </div>
-      </nav>
+      </header>
 
-      <div class="top-section">
+      <div class="top-section" id="home">
         <h1 data-aos="fade-right" data-aos-duration="1000">SKG STEELTECH</h1>
         <p data-aos="fade-right" data-aos-duration="1500">
           Our organization is engaged in offering a wide range industrial Bright
@@ -73,7 +86,7 @@
         </button>
       </div>
 
-      <div class="about container" data-aos="fade-up">
+      <div class="about container" id="about" data-aos="fade-up">
         <div class="w-md-50 p-md-5">
           <h2>About Us</h2>
           <p>
@@ -90,7 +103,7 @@
         </div>
       </div>
 
-      <div class="why-us">
+      <div class="why-us" id="why-us">
         <div class="w-md-50 why-img" data-aos="fade-up-right">
           <!-- <img src="/media/steel-slide3.jpg" width="100%" alt="" /> -->
         </div>
@@ -108,6 +121,7 @@
           </p>
         </div>
       </div>
+
       <div class="cards">
         <div class="why-card shadow" data-aos="flip-left">
           <img src="/media/img1.jpg" width="100%" alt="" />
@@ -120,90 +134,91 @@
         </div>
       </div>
 
-      <div class="facilities container p-md-5 p-3">
+      <div id="facilities" class="facilities container p-md-5 p-3">
         <h2 class="py-5">Facilities</h2>
 
         <div class="card-list">
-          <div class="fac-card shadow" data-aos="zoom-in-up">
-            <div class="w-50">
-              <img src="/media/steel-slide3.jpg" class="fac-img" alt="" />
-            </div>
-            <div class="w-50 p-3">
+          <div class="fac-card shadow border" data-aos="zoom-in-up">
+            <div
+              class="p-3 d-flex justify-content-center align-items-center w-100"
+            >
               <h4>Raw Material</h4>
             </div>
           </div>
-          <div class="fac-card shadow" data-aos="zoom-in-up">
-            <div class="w-50">
-              <img src="/media/steel-slide3.jpg" class="fac-img" alt="" />
-            </div>
-            <div class="w-50 p-3">
-              <h4>Inspection</h4>
-            </div>
-          </div>
-          <div class="fac-card shadow" data-aos="zoom-in-up">
-            <div class="w-50">
-              <img src="/media/steel-slide3.jpg" class="fac-img" alt="" />
-            </div>
-            <div class="w-50 p-3">
-              <h4>Annealing</h4>
+          <img src="/media/down.png" class="m-auto" width="10%" alt="" />
+          <div class="fac-card shadow border" data-aos="zoom-in-up">
+            <div
+              class="p-3 d-flex justify-content-center align-items-center w-100"
+            >
+              <h4>Raw Material</h4>
             </div>
           </div>
+          <img src="/media/down.png" class="m-auto" width="10%" alt="" />
+          <div class="fac-card shadow border" data-aos="zoom-in-up">
+            <div
+              class="p-3 d-flex justify-content-center align-items-center w-100"
+            >
+              <h4>Raw Material</h4>
+            </div>
+          </div>
+          <img src="/media/down.png" class="m-auto" width="10%" alt="" />
         </div>
+
         <div class="card-list">
-          <div class="fac-card shadow" data-aos="zoom-in-up">
-            <div class="w-50">
-              <img src="/media/steel-slide3.jpg" class="fac-img" alt="" />
-            </div>
-            <div class="w-50 p-3">
-              <h4>Shot Blasting</h4>
-            </div>
-          </div>
-          <div class="fac-card shadow" data-aos="zoom-in-up">
-            <div class="w-50">
-              <img src="/media/steel-slide3.jpg" class="fac-img" alt="" />
-            </div>
-            <div class="w-50 p-3">
-              <h4>Pickling</h4>
+          <div class="fac-card shadow border" data-aos="zoom-in-up">
+            <div
+              class="p-3 d-flex justify-content-center align-items-center w-100"
+            >
+              <h4>Raw Material</h4>
             </div>
           </div>
-          <div class="fac-card shadow" data-aos="zoom-in-up">
-            <div class="w-50">
-              <img src="/media/steel-slide3.jpg" class="fac-img" alt="" />
-            </div>
-            <div class="w-50 p-3">
-              <h4>Cold Drawing</h4>
+          <img src="/media/down.png" class="m-auto" width="10%" alt="" />
+          <div class="fac-card shadow border" data-aos="zoom-in-up">
+            <div
+              class="p-3 d-flex justify-content-center align-items-center w-100"
+            >
+              <h4>Raw Material</h4>
             </div>
           </div>
+          <img src="/media/down.png" class="m-auto" width="10%" alt="" />
+          <div class="fac-card shadow border" data-aos="zoom-in-up">
+            <div
+              class="p-3 d-flex justify-content-center align-items-center w-100"
+            >
+              <h4>Raw Material</h4>
+            </div>
+          </div>
+          <img src="/media/down.png" class="m-auto" width="10%" alt="" />
         </div>
+
         <div class="card-list">
-          <div class="fac-card shadow" data-aos="zoom-in-up">
-            <div class="w-50">
-              <img src="/media/steel-slide3.jpg" class="fac-img" alt="" />
-            </div>
-            <div class="w-50 p-3">
-              <h4>Centerless Grinding</h4>
-            </div>
-          </div>
-          <div class="fac-card shadow" data-aos="zoom-in-up">
-            <div class="w-50">
-              <img src="/media/steel-slide3.jpg" class="fac-img" alt="" />
-            </div>
-            <div class="w-50 p-3">
-              <h4>Inspection</h4>
+          <div class="fac-card shadow border" data-aos="zoom-in-up">
+            <div
+              class="p-3 d-flex justify-content-center align-items-center w-100"
+            >
+              <h4>Raw Material</h4>
             </div>
           </div>
-          <div class="fac-card shadow" data-aos="zoom-in-up">
-            <div class="w-50">
-              <img src="/media/steel-slide3.jpg" class="fac-img" alt="" />
+          <img src="/media/down.png" class="m-auto" width="10%" alt="" />
+          <div class="fac-card shadow border" data-aos="zoom-in-up">
+            <div
+              class="p-3 d-flex justify-content-center align-items-center w-100"
+            >
+              <h4>Raw Material</h4>
             </div>
-            <div class="w-50 p-3">
-              <h4>Packing</h4>
+          </div>
+          <img src="/media/down.png" class="m-auto" width="10%" alt="" />
+          <div class="fac-card shadow border" data-aos="zoom-in-up">
+            <div
+              class="p-3 d-flex justify-content-center align-items-center w-100"
+            >
+              <h4>Raw Material</h4>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="range container p-md-5 p-3 pt-5">
+      <div id="range" class="range container p-md-5 p-3 pt-5">
         <h2 class="my-5">Range</h2>
 
         <div class="table-responsive">
@@ -263,12 +278,18 @@
           </table>
         </div>
       </div>
-      <div class="range container p-md-5 p-3 pt-5">
+      <div id="team" class="team container p-md-5 p-3 pt-5">
         <h2 class="my-5">Team</h2>
 
         <div class="row d-flex align-items-center">
           <div class="col-12 col-md-6">
-            <img data-aos="zoom-in" src="/media/sagar_dahale.jpeg" width="100%" alt="" />
+            <img
+              data-aos="zoom-in"
+              src="/media/sagar_dahale.jpeg"
+              width="100%"
+              alt=""
+              class="team-img"
+            />
           </div>
           <div data-aos="fade-right" class="col-12 col-md-6 py-5">
             <h2>Sagar Dahale</h2>
@@ -285,7 +306,10 @@
         </div>
 
         <div class="row d-flex align-items-center py-5">
-          <div data-aos="fade-right" class="col-12 col-md-6 order-last order-md-first py-5">
+          <div
+            data-aos="fade-right"
+            class="col-12 col-md-6 order-last order-md-first py-5"
+          >
             <h2>Kishor Gupta</h2>
             <p>
               Started career in the year 1986 with working in a Tool and Alloy
@@ -298,13 +322,25 @@
             </p>
           </div>
           <div class="col-12 col-md-6">
-            <img data-aos="zoom-in" src="/media/kishor_gupta.jfif" width="100%" alt="" />
+            <img
+              data-aos="zoom-in"
+              src="/media/kishor_gupta.jfif"
+              width="100%"
+              alt=""
+              class="team-img"
+            />
           </div>
         </div>
 
         <div class="row d-flex align-items-center">
           <div class="col-12 col-md-6">
-            <img data-aos="zoom-in" src="/media/IMG_3065.JPG" width="100%" alt="" />
+            <img
+              data-aos="zoom-in"
+              src="/media/IMG_3065.JPG"
+              width="100%"
+              alt=""
+              class="team-img"
+            />
           </div>
           <div data-aos="fade-right" class="col-12 col-md-6 py-5">
             <h2>Avinash Jajodia</h2>
@@ -323,7 +359,7 @@
         </div>
       </div>
 
-      <div class="range container p-md-5 p-3">
+      <div id="app" class="app container p-md-5 p-3">
         <h2 class="my-5">Applications</h2>
 
         <div class="d-flex application-container" data-aos="zoom-out">
@@ -338,6 +374,13 @@
         </div>
       </div>
     </div>
+
+    <div class="p-4 copyright text-center">
+      <p>Copyright © SKG Steel Tech All Right Reserved.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/hamburger.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
