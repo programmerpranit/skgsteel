@@ -130,7 +130,8 @@ button {
 
 .fac-card {
   display: flex;
-  width: 30%;
+  width: 100%;
+  margin: auto;
   /* background-color: #f1224a; */
   border-radius: 20px;
   min-height: 120px;
@@ -151,6 +152,7 @@ button {
 .card-list {
   display: flex;
   justify-content: space-between;
+  margin: auto;
   margin-bottom: 50px;
 }
 
@@ -185,11 +187,32 @@ button {
   border-radius: 20px;
 }
 
+.card-list img {
+  visibility: hidden;
+}
+
+.fac-card div {
+  flex-direction: column;
+}
+.fac-card div p {
+  margin: 0px;
+}
+
+footer {
+  padding: 20px;
+  background: var(--primary);
+  color: white;
+}
+
 @media screen and (max-width: 760px) {
   .top-section {
     padding-inline: 20px;
   }
 
+  .card-list img {
+    visibility: visible;
+  }
+  
   h1 {
     font-size: 20px !important;
     font-weight: 800 !important;
